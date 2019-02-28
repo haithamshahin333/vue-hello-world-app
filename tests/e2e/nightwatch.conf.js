@@ -35,7 +35,10 @@ var config = {
         browserName: 'firefox',
         javascriptEnabled: true,
         acceptSslCerts: true,
-        nativeEvents: true
+        nativeEvents: true,
+        'moz:firefoxOptions': {
+          args: ["-headless"]
+        }
       }
     },
     // Here, we give each of the browsers we want to test in, and their driver configuration

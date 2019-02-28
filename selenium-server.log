@@ -1,34 +1,40 @@
-22:47:52.828 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-22:47:52.930 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2019-02-27 22:47:52.995:INFO::main: Logging initialized @399ms to org.seleniumhq.jetty9.util.log.StdErrLog
-22:47:53.280 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-22:47:53.390 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
-22:47:53.639 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+23:02:55.802 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+23:02:55.902 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2019-02-27 23:02:55.967:INFO::main: Logging initialized @390ms to org.seleniumhq.jetty9.util.log.StdErrLog
+23:02:56.261 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+23:02:56.375 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+23:02:56.635 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "firefox",
   "javascriptEnabled": true,
+  "moz:firefoxOptions": {
+    "args": [
+      "-headless"
+    ]
+  },
   "name": "Test",
   "nativeEvents": true
 }
-22:47:53.641 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
-1551325673988	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1j/hs05l0cx7650h7l8zyl0x41c0000gn/T/rust_mozprofile.8rgXtV4CB6Oy"
-2019-02-27 22:47:56.238 plugin-container[38723:4764904] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x832b, name = 'com.apple.tsm.portname'
+23:02:56.636 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+1551326576995	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/1j/hs05l0cx7650h7l8zyl0x41c0000gn/T/rust_mozprofile.2oJXvumrmCB8"
+*** You are running in headless mode.
+2019-02-27 23:02:58.904 plugin-container[39391:4783180] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x893b, name = 'com.apple.tsm.portname'
 See /usr/include/servers/bootstrap_defs.h for the error codes.
-2019-02-27 22:47:56.343 plugin-container[38723:4764904] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x137b, name = 'com.apple.coredrag'
+2019-02-27 23:02:59.045 plugin-container[39391:4783180] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8907, name = 'com.apple.coredrag'
 See /usr/include/servers/bootstrap_defs.h for the error codes.
-2019-02-27 22:47:56.352 plugin-container[38723:4764904] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x118919dc0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
-2019-02-27 22:47:56.357 plugin-container[38723:4764915] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
-1551325676669	Marionette	INFO	Listening on port 53615
-22:47:56.824 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-22:47:56.866 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 701889c7-72ca-684b-bd63-dfbf34e96166 (org.openqa.selenium.firefox.GeckoDriverService)
-2019-02-27 22:47:57.290 plugin-container[38725:4764996] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x893f, name = 'com.apple.tsm.portname'
+2019-02-27 23:02:59.064 plugin-container[39391:4783180] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x1036d4ca0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-02-27 23:02:59.067 plugin-container[39391:4783182] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1551326579254	Marionette	INFO	Listening on port 54446
+23:02:59.421 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:02:59.465 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 81fd3d82-dbe8-3f43-93d1-d139fb2a5d5a (org.openqa.selenium.firefox.GeckoDriverService)
+2019-02-27 23:02:59.823 plugin-container[39393:4783267] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c43, name = 'com.apple.tsm.portname'
 See /usr/include/servers/bootstrap_defs.h for the error codes.
-2019-02-27 22:47:57.403 plugin-container[38725:4764996] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x97b, name = 'com.apple.coredrag'
+2019-02-27 23:02:59.916 plugin-container[39393:4783267] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x123b, name = 'com.apple.coredrag'
 See /usr/include/servers/bootstrap_defs.h for the error codes.
-2019-02-27 22:47:57.414 plugin-container[38725:4764996] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10b8eca90 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
-2019-02-27 22:47:57.420 plugin-container[38725:4764997] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+2019-02-27 23:02:59.926 plugin-container[39393:4783267] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x1045efd90 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2019-02-27 23:02:59.929 plugin-container[39393:4783268] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
 console.log: Accessibility service init or shutdown observer does not exist.
-1551325678025	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+1551326580474	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
 onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
 _middleware/</<()@resource://activity-stream/lib/Store.jsm:49
 Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
@@ -44,5 +50,8 @@ execute()@server.js:267
 onPacket/<()@server.js:242
 onPacket()@server.js:241
 _onJSONObjectReady/<()@transport.js:500
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D001F,name=PContent::Msg_PreferenceUpdate) Closed channel: cannot send/recv
+
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-22:47:58.739 INFO [ActiveSessions$1.onStop] - Removing session 701889c7-72ca-684b-bd63-dfbf34e96166 (org.openqa.selenium.firefox.GeckoDriverService)
+23:03:00.946 INFO [ActiveSessions$1.onStop] - Removing session 81fd3d82-dbe8-3f43-93d1-d139fb2a5d5a (org.openqa.selenium.firefox.GeckoDriverService)
