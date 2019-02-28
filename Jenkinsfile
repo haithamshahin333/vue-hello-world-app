@@ -23,6 +23,8 @@ pipeline {
             steps {
                 echo '=============================================Entering Stage 1 - Install Globals======================================'
                 sh 'npm install'
+                sh 'npm install -g get-firefox'
+                sh 'sleep 180'
 
             }
         }
