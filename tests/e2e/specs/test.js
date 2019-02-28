@@ -3,6 +3,7 @@
 
 module.exports = {
   "default e2e tests": browser => {
+    console.log(browser.globals);
     browser
       .url(browser.launchUrl)
       .waitForElementVisible("#app", 5000)
