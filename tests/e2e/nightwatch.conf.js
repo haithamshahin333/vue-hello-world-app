@@ -6,7 +6,7 @@ var geckodriver = require('geckodriver');
 var config = {
   src_folders: [
     // Folders with tests
-    'tests/features'
+    'tests/e2e/specs'
   ],
   output_folder: 'reports', // Where to output the test reports
   selenium: {
@@ -21,6 +21,7 @@ var config = {
   },
   test_settings: {
     default: {
+      launch_url: "https://frontend-demo-labs-dev-phildemo.apps.s11.core.rht-labs.com",
       screenshots: {
         enabled: false
       },
